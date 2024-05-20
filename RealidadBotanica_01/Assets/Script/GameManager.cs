@@ -23,14 +23,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        MainMenu();
-    }
+    private void Start() => MainMenu();
+
 
     public void MainMenu()
     {
-        OnitemsMenu?.Invoke();
+        OneMainMenu?.Invoke();
         Debug.Log("Main Menu Activated");
     }
     public void ItemsMenu()
