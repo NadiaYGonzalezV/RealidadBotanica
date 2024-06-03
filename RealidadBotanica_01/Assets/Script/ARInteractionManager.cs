@@ -14,8 +14,14 @@ public class ARInteractionManager : MonoBehaviour
 
     private GameObject aRPointer;
     private GameObject item3DModel;
+    private GameObject itemSeledted;
+
     private bool isInitialPosition;
     private bool isOverUI;
+
+    private bool isOver3DModel;
+
+    private Vector2 inicialTocuhPos;
 
     public GameObject Item3DModel
     {
@@ -52,28 +58,67 @@ public class ARInteractionManager : MonoBehaviour
             }
         }
 
-        if(Input.touchCount > 0)
+        if (Input.touchCount > 0)
         {
             Touch touchOne = Input.GetTouch(0);
-            if(touchOne.phase == TouchPhase.Began)
+            if (touchOne.phase == TouchPhase.Began)
             {
                 var touchPosition = touchOne.position;
                 isOverUI = isTapOverUI(touchPosition);
+                isOver3DModel = isTapOver3DModel(touchPosition);
             }
-            if(touchOne.phase == TouchPhase.Moved)
+            if (touchOne.phase == TouchPhase.Moved)
             {
-                if(aRRaycastManager.Raycast(touchOne.position, hits, TrackableType.Planes))
+                if (aRRaycastManager.Raycast(touchOne.position, hits, TrackableType.Planes))
                 {
                     Pose hitPose = hits[0].pose;
+                    if (!isOverUI && isOver3DModel) 
                     {
-                        if(!isOverUI)
-                        {
                             transform.position = hitPose.position;
-                        }
                     }
                 }
             }
+
+            if (Input.touchCount == 2)
+            {
+                Touch touchTwo = Input.GetTouch(1);
+                if (touchOne.phase == TouchPhase.Began || touchTwo.phase == TouchPhase.Began)
+                {
+                    inicialTocuhPos = touchTwo.position - touchOne.position;
+                } 
+                if (touchOne.phase == TouchPhase.Moved ||  touchTwo.phase == TouchPhase.Moved)
+                {
+                    Vector2 currentTouchPos = touchTwo.position - touchOne.position;
+                    float angle = Vector2.SignedAngle(inicialTocuhPos, currentTouchPos);
+                    item3DModel.transform.rotation = Quaternion.Euler(0, item3DModel.transform.eulerAngles.y - angle, 0);
+                    inicialTocuhPos = currentTouchPos;
+                }
+            }
+
+            if(isOver3DModel && item3DModel == null && !isOverUI)
+            {
+                GameManager.instance.ARPosition();
+                item3DModel = itemSeledted;
+                itemSeledted = null;
+                aRPointer.SetActive(true);
+                transform.position=item3DModel.transform.position;
+                item3DModel.transform.parent = aRPointer.transform;
+            }
         }
+    }
+
+    private bool isTapOver3DModel(Vector2 touchPosition)
+    {
+        Ray ray = aRCamera.ScreenPointToRay(touchPosition);
+        if(Physics.Raycast(ray, out RaycastHit hit3DModel))
+        {
+            if (hit3DModel.collider.CompareTag("Item"))
+            {
+                itemSeledted = hit3DModel.transform.gameObject;
+                return true;
+            }
+        }
+        return false;
     }
 
     private bool isTapOverUI(Vector2 touchPosition)
@@ -100,7 +145,7 @@ public class ARInteractionManager : MonoBehaviour
     public void DeleteItem()
     {
         Destroy(item3DModel);
-        aRPointer?.SetActive(false);
+        aRPointer.SetActive(false);
         GameManager.instance.MainMenu();
     }
 
