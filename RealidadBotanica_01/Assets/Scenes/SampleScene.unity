@@ -515,7 +515,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3411.6418, y: 2339.688}
+  m_AnchoredPosition: {x: -1195731.5, y: 935907.9}
   m_SizeDelta: {x: 0, y: 440}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &532797179
@@ -2434,6 +2434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 11400000, guid: 9c072268f2d4cd842950aec71a18ee35, type: 2}
+  - {fileID: 11400000, guid: 80242b50be8e19e4cbf93f9552efc63e, type: 2}
   buttonContainer: {fileID: 532797177}
   itemButtonManager: {fileID: 4960227767773046856, guid: 8ab59c8079018454fa24cdd26f355fdf, type: 3}
 --- !u!4 &2018151577
