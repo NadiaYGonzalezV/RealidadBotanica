@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6441f50764fd164cbaca563dce5ae32, type: 3}
+  m_Name: PlantaDinero
+  m_EditorClassIdentifier: 
+  ItemName: Planta De Dinero
+  ItemImage: {fileID: 21300000, guid: 8e13f9439e9da2346a68b4746be59a05, type: 3}
+  ItemDescription: Planta De Dinero
+  Item3DModel: {fileID: 4806101780061847765, guid: 19bb58d0218920d4cb6d5f12bd05885b, type: 3}
