@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Cactus
   ItemImage: {fileID: 21300000, guid: 34e0007c384e0704c8c092938c720efd, type: 3}
-  ItemDescription: 'Cactus '
+  ItemDescription: Cactaceae
   Item3DModel: {fileID: 8511938433746567330, guid: c5151f6128ac54e4da161db893d5b669, type: 3}
