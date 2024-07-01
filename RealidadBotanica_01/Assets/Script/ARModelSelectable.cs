@@ -6,7 +6,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ARModelSelectable : MonoBehaviour
 {
-  
+ 
     public GameObject text3DPrefab;  // Prefab del texto 3D
     private GameObject instantiatedText3D;  // Instancia del texto 3D
     private ARRaycastManager arRaycastManager;
@@ -17,6 +17,7 @@ public class ARModelSelectable : MonoBehaviour
         {
             instantiatedText3D = Instantiate(text3DPrefab, transform);
             instantiatedText3D.SetActive(false);  // Asegúrate de que el texto esté inicialmente desactivado
+            Debug.Log("Text 3D instantiated and deactivated for: " + gameObject.name);
         }
 
         arRaycastManager = FindObjectOfType<ARRaycastManager>();
@@ -36,6 +37,7 @@ public class ARModelSelectable : MonoBehaviour
                     if (IsTouchedObject(touch.position))
                     {
                         instantiatedText3D.SetActive(!instantiatedText3D.activeSelf);  // Alterna el estado activo del texto
+                        Debug.Log("Text 3D toggled for: " + gameObject.name);
                     }
                 }
             }
@@ -48,11 +50,22 @@ public class ARModelSelectable : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            return hit.transform == transform;
+            // Verificar si el objeto tocado tiene el tag correcto
+            if (hit.transform.CompareTag("Informacion"))  // Reemplaza "Informacion" con el tag asignado
+            {
+                Debug.Log("Touched object with tag 'Informacion': " + hit.transform.name);
+                return hit.transform == transform;
+            }
         }
         return false;
     }
 }
+
+
+
+
+
+
 
 
 

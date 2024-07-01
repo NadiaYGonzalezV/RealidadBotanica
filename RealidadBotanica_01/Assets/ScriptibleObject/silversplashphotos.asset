@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6441f50764fd164cbaca563dce5ae32, type: 3}
   m_Name: silversplashphotos
   m_EditorClassIdentifier: 
-  ItemName: SilverSplashPothos
+  ItemName: Potus Plateado
   ItemImage: {fileID: 21300000, guid: 43620232f59f17f44803d99b446bba2b, type: 3}
   ItemDescription: SilverSplashPothos
   Item3DModel: {fileID: 5476870217183877994, guid: c95c38e7f80519940bf5c14a15fa4e22, type: 3}

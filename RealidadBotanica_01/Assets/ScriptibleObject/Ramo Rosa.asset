@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Ramo Rosas
   ItemImage: {fileID: 21300000, guid: 7f4ffa66c4ea6704d825563744f84dc7, type: 3}
-  ItemDescription: Ramo Rosas
+  ItemDescription: Rosaceae
   Item3DModel: {fileID: 2055191960510716902, guid: d1838af920270ac4c9a020804a754f61, type: 3}

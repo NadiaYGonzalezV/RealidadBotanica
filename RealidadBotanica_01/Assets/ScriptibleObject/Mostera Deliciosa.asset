@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6441f50764fd164cbaca563dce5ae32, type: 3}
   m_Name: Mostera Deliciosa
   m_EditorClassIdentifier: 
-  ItemName: Mostera Deliciosa
+  ItemName: "Costilla de Ad\xE1n"
   ItemImage: {fileID: 21300000, guid: ccc97650110b86043a40d7201ef7ff14, type: 3}
   ItemDescription: Mostera Deliciosa
   Item3DModel: {fileID: 3276409492914964471, guid: 656a37c5a2b953b4da3c540fccea90c6, type: 3}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Planta De Dinero
   ItemImage: {fileID: 21300000, guid: 8e13f9439e9da2346a68b4746be59a05, type: 3}
-  ItemDescription: Planta De Dinero
+  ItemDescription: plectranthus
   Item3DModel: {fileID: 4806101780061847765, guid: 19bb58d0218920d4cb6d5f12bd05885b, type: 3}

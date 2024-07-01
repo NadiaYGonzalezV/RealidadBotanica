@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &9090482254883000940
+--- !u!1001 &2318853074571310381
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1664033782684064976, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_Name
-      value: Info_original_cactus Variant
+      value: Info_original_magnolia Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_Pivot.x
@@ -58,27 +58,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
-      propertyPath: m_LocalRotation.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.126
+      value: 0.066696584
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.176
+      value: 1.117646
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -86,15 +86,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4604844457343516208, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8746072190313113651, guid: 0b5a761682124b7419b9a929ff838efc, type: 3}
-      propertyPath: m_margin.y
-      value: -0.06469679
+      propertyPath: m_text
+      value: "Informaci\xF3n:\nSon muy apreciados por sus flores solitarias, grandes
+        y decorativas. Adem\xE1s estas flores emiten una fragancia muy agradable
+        y presenta una paleta de colores muy especial que var\xEDa del rosa al amarillo.\nDebes
+        saber que las magnolias se usan para muchas otras cosas adem\xE1s de para
+        decorar jardines y balcones. Por ejemplo su corteza tiene propiedades medicinales.
+        La flor en s\xED se utiliza en productos de cosm\xE9tica sobre todo por su
+        fragancia. Y su madera est\xE1 muy bien considerada ya que es fuerte, duradera,
+        hermosa y f\xE1cil de trabajar.\nLas magnolias requieren un suelo bien drenado
+        para evitar la pudrici\xF3n de la ra\xEDz. De preferencia deber\xE1s ubicarlas
+        en un lugar donde reciban sol total o parcial. Tambi\xE9n necesitan suficiente
+        espacio para crecer sin limitaciones. Como regla general, deben ser plantadas
+        al menos a 3 metros de distancia de construcciones o de otros \xE1rboles."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

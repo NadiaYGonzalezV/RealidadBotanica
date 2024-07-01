@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: Bonsai
   ItemImage: {fileID: 21300000, guid: fed4479682472b94c9201543010ec1d1, type: 3}
-  ItemDescription: Bonsai
+  ItemDescription: Acer palmatum
   Item3DModel: {fileID: 3963582859895641096, guid: c1d0df9434ea7d74489603a92d6abb67, type: 3}
