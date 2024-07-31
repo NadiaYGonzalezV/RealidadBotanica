@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6441f50764fd164cbaca563dce5ae32, type: 3}
   m_Name: Begonia Beleaf
   m_EditorClassIdentifier: 
-  ItemName: Begonia Beleaf
+  ItemName: 'Begonia '
   ItemImage: {fileID: 21300000, guid: ebbaf2d7f82376b47881e62551e2e23b, type: 3}
   ItemDescription: Begonia Beleaf
   Item3DModel: {fileID: 3259839030402788732, guid: 1f35b85c33dfacb4b8483caf4a4bc040, type: 3}

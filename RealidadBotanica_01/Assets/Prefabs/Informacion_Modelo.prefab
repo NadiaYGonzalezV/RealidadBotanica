@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4614de52f42a09c489d2e28e742fd4ba, type: 2}
+  - {fileID: 2100000, guid: 1d4382aa1b6852b419675703c8a6da17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,9 +118,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b592836e5f97d845bdd1813f943bfd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text3DPrefabs:
-  - {fileID: 7579616009572126396, guid: b47661f9dc8e3194992824fa1a4d35eb, type: 3}
-  - {fileID: 9101318508094368624, guid: 53d983252d755fb41955643f2a2872ec, type: 3}
-  - {fileID: 3772188996570531815, guid: d9f13bfebaa189848a431a7d7c22ae35, type: 3}
-  - {fileID: 2168545593427164977, guid: 46d71808337ad7442a33e5fa1fa53650, type: 3}
-  prefabIndex: 0
+  text3DPrefab: {fileID: 0}
